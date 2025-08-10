@@ -78,6 +78,7 @@ inputs = {
     { name = "lb1", content = "192.168.100.200", type = "A", ttl = local.default_ttl, proxied = false },
     { name = "lb2", content = "192.168.100.201", type = "A", ttl = local.default_ttl, proxied = false },
     { name = "stf", content = "192.168.100.47", type = "A", ttl = local.default_ttl, proxied = false },
+    { name = "gs1", content = "192.168.100.48", type = "A", ttl = local.default_ttl, proxied = false },
     { name = "kbm1", content = "192.168.100.61", type = "A", ttl = local.default_ttl, proxied = false },
     { name = "kbm2", content = "192.168.100.62", type = "A", ttl = local.default_ttl, proxied = false },
     { name = "kbm3", content = "192.168.100.63", type = "A", ttl = local.default_ttl, proxied = false },
