@@ -4,3 +4,4 @@
 .terraform.lock.hcl
 backend.tf
 */.terragrunt-cache
+secrets/
