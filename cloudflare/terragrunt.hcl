@@ -49,13 +49,13 @@ inputs = {
   ]
 
   private_service_records = [
-    { name = "alertmanager", content = "atlas.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
+    { name = "alertmanager", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "drawio", content = "atlas.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "excalidraw", content = "atlas.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
-    { name = "grafana", content = "atlas.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
+    { name = "grafana", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "paperless", content = "atlas.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "pdf", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
-    { name = "prometheus", content = "atlas.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
+    { name = "prometheus", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "qbittorrent", content = "atlas.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "tools", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "traefik", content = "lb1.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
