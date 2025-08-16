@@ -61,7 +61,8 @@ inputs = {
     { name = "traefik", content = "lb1.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "priv-traefik", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
     { name = "longhorn", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
-    { name = "argocd", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false }
+    { name = "argocd", content = "lb2.${local.base_domain}", type = "CNAME", ttl = local.default_ttl, proxied = false },
+    { name = "loki-gateway", content = "192.168.100.202", type = "A", ttl = local.default_ttl, proxied = false }
   ]
 
   public_service_records = [
